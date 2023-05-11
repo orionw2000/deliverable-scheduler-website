@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport content=" width=device-width, initial-scale="1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Project Manager</title>
+</head>
+
+<body>
+<h1>Project Creation</h1>
+<ul id="createProject">
+</ul>
+<h2>Create a Project</h2>
+<form class="card-content" id="create-project-form">
+    <label>Project Name
+        <input type="text" required class="validated-field" id="project-name" placeholder="">
+    </label>
+    <label><br>Password
+        <input type="text" id="project-password" required class="validated-field" placeholder="">
+    </label>
+    <label><br>Deliverable Name
+        <input type="text" required class="validated-field" id="deliverable-name" placeholder="">
+    </label>
+    <label><br>Deliverable Due Date
+        <input type="text" required class="validated-field" id="deliverable-due-date" placeholder="">
+    </label>
+    <br>
+    <input type="submit" id="create" value="Create">
+</form>
+<h1>Project Navigation</h1>
+<ul id="getProject">
+</ul>
+<h2>Go to a Project</h2>
+<form class="card-content" id="get-project-form">
+    <label>Project ID
+        <input type="text" required class="validated-field" id="project-id" placeholder="" autofocus>
+    </label>
+    <input type="submit" id="get" value="Go">
+</form>
+</body>
+<script type="text/javascript" src="projectIndex.js"></script>
+</html>
